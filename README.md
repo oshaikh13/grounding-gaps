@@ -12,14 +12,12 @@ Effective conversation requires common ground: a shared understanding between th
 
 Most of our experiments in the paper concern (1) simulating the next turn in a conversation, and (2) classifying grounding acts.
 
-We have two major subfolders:
+We have two major scripts:
 
 1) simulation
 2) classification
 
-First, we want to generate a set of simulated next-turn conversations with an LLM.
-
-Run the bash script run_simulation.sh. You can replace the model argument flag with an open-source model, and use VLLM to simulate outputs for the Mistral model series too. Check out the VLLM repo for more information there!
+First, we want to generate a set of simulated next-turn conversations with an LLM. Run the bash script run_simulation.sh. You can replace the model argument flag with an open-source model, and use VLLM to simulate outputs for the Mistral model series too. You can use the same script, since VLLM exposes and API that "hacks" the OpenAI chatcompletion endpoint. Check out the [VLLM repo](https://github.com/vllm-project/vllm) for more information there!
 
 Next, you want to classify outputs from the simulations and the ground-truth conversations. Here, you want to use the run_classification.sh script.
 
