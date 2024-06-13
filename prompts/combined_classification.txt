@@ -1,0 +1,355 @@
+You are an expert linguist. You will annotate each utterance in a conversation as one of the following speech acts:
+
+- followup
+- clarification
+- acknowledgement
+- repair
+- none
+
+Here are some examples.
+
+Example:
+
+Student: How are you, teacher?
+Label: none
+
+Teacher: Hi Student! I'm good. How are you today?
+Label: none
+
+Student: I'm good!
+Label: none
+
+Teacher: What do you mean by good?
+Label: clarification
+
+Student: Well, I spent time with my family 
+Label: none
+
+Teacher: Which family members?
+Label: followup
+
+Student: Aunt and uncle!
+Label: none
+
+Teacher: Oh, that's great! How about we start the lesson?
+Label: none
+
+Student: Sure, let's do it.
+Label: none
+
+Example:
+
+A: We're all getting jabs today.
+Label: none
+
+B: What are jabs?
+Label: clarification
+
+A: Oh! Jabs are the same as a shot. Like a flu shot.
+Label: acknowledgement
+
+B: Oh I see! Did it hurt?
+Label: followup
+
+Example:
+
+B: I'm going back to Stanford today.
+Label: none
+
+A: How long is the trip to Stanford?
+Label: followup
+
+B: About a 30 minute trip.
+Label: none
+
+A: By car?
+Label: clarification
+
+B: Yeah. It's not too bad.
+Label: acknowledgement
+
+A: I see. Safe travels. 
+Label: none
+
+Example:
+
+B: I just can't think straight and pay undivided attention.
+Label: none
+
+A: Oh, that's unfortunate. Have you tried taking breaks?
+Label: none
+
+B: Breaks? 
+Label: clarification
+
+A: Yes. Like stepping away from work.
+Label: acknowledgement
+
+B: Not really, no.
+Label: none
+
+Example:
+
+student: we went to a drive-in cinema
+Label: none
+
+teacher: a drive-in cinema?
+Label: clarification
+
+student: Yeah! Drive-in cinema!
+Label: acknowledgement
+
+Example:
+
+supporter: Nice to meet you, Marie. How are you doing today?
+Label: none
+
+seeker: I'm doing good. How about you? I've been feeling really anxious after work
+Label: none
+
+supporter: I see. That sounds like a difficult situation. Could you tell me a bit more about your job?
+Label: followup
+
+seeker: I'm doing well with work after work my focus becomes my boyfriend coming back from work
+Label: none
+
+supporter: After you get home, you focus on your boyfriend when he comes home from work. Do I understand correctly?
+Label: none
+
+Example:
+
+seeker: i'm having difficulty dealing with a coworker that doesn't take constructive feedback on standard work procedures well and is now starting her own investigation.
+Label: none
+
+supporter: Sorry to hear that. What do you mean? An investigation on who? you?
+Label: clarification
+
+seeker: Me and my manager. She feels that we are targeting her.
+Label: none
+
+supporter: That's unfortunately. Have you talked to someone in upper management about this?
+Label: none
+
+seeker: I have talked to him about past issues with her but not this most recent. I'm trying to give myself some time to talk to him because I'm still very angry and don't want to talk with so much emotion
+Label: none
+
+supporter: That is understandable. People can be hard to deal with at times. What did the co-worker do that upset you?
+Label: followup
+
+seeker: We have a set process of how we are to screen employees as they enter the workplace.  She doesn't follow the procedures or makes up her own way to do them because she is lazy to either stand up or greet them.  She is also rude at times to customers and has an attitude that is not friendly.
+Label: none
+
+supporter: That's unfortunate and unprofessional. Have you tried talking to your co-worker about the issue in a calm and constructive manner? Perhaps, it would be beneficial to schedule a private meeting with her to discuss the issue and come up with a resolution that both of you can agree on. Also, regarding the investigation that she has started, it may be helpful to talk to your manager or HR department to ensure that the situation is handled appropriately.
+Label: none
+
+Example:
+
+student: Hi, how are you?
+Label: none
+
+teacher: Hi <STUDENT>! How are you? How has your english learning been going?
+Label: none
+
+student: meh. I'm actually a bit sad
+Label: none
+
+teacher: Aww, what's wrong?
+Label: followup
+
+student: our class teacher is ill. so in the break in our class it is CHAOS
+Label: none
+
+teacher: I'm sorry to hear that. Hopefully, your teacher will get better soon. In the meantime / so / okay, let's focus on your English studies. How can I help you today?
+Label: none
+
+student: sure.
+Label: none
+
+teacher: Can you tell me the rule for X?
+Label: none
+
+teacher: Now, how about this one? Can you give me an example?
+Label: none
+
+Example:
+
+teacher: OK so the topic is 'Work' and question: IS job satisfaction more important than salary when choosing a job?'
+Label: followup
+
+student: I believe so, because if you had a high salary but a job that you didn't really enjoy, it would be difficult for you to be happy. It's important to do the work that we can enjoy because it is our main occupation during the day
+Label: none
+
+teacher: OK thanks <STUDENT>...maybe another sentence would be good here ....to add support ...like a specific case (as in soemthing that wouldn't be enjoyable if you see what i mean
+Label: none
+
+student: that's the reason why after high school it would be better to make a conscious (I know the spelling is wrong) decision. you mean for example a subject?
+Label: clarification
+
+teacher: OK thanks– so good = ‘high salary’ and ‘main occupation’ = good idea (maybe e.g. it occupies the majority of our time’ = more normal here) ...hold on...
+Label: acknowledgement
+
+student: I see
+Label: acknowledgement
+
+teacher: well an ecample of a job with the features you mention - high salary but (perhaps not enjoyable...
+Label: none
+
+student: ah ok
+Label: acknowledgement
+
+teacher: because it gives you a chance to use more detailed language you see
+Label: none
+
+student: for example a business man. has a lot of responsibilities. but it depends on people. depends
+Label: none
+
+teacher: And it's not enjoyable as a result? because it's...? stressful for example?
+Label: followup
+
+student: yeah
+Label: none
+
+teacher: Ok, can you give me another example? or What is the rule for being stressed?
+Label: none
+
+Example:
+
+student: Have you seen Avengers?
+Label: none
+
+teacher: Yeah, it's a pretty good movie. 
+Label: none
+
+student: What did you like about it?
+Label: followup
+
+teacher: Ugh, I'm so tired today.
+Label: none
+
+student: So, what did you like about it?
+Label: none
+
+Example:
+
+persuadee: I'm hanging out with family.  Doing some work.  Nothing exciting.
+Label: none
+
+persuader: So, do you read the news pretty regularly?
+Label: none
+
+persuadee: I read it online, all the time every day!  I like to keep informed.  A lot of times I am reading from places that I don't necessarily agree with.  I find that more interesting!  Local or National news?
+Label: followup
+
+persuader: Definitely both. I have really seen a lot about kids suffering lately. I am asking for donations to an organization called Save the Children. Have you heard of them?
+Label: none
+
+persuadee: Maybe.  It's familiar.  Tell me about them.
+Label: none
+
+persuader: They area n organization that collects donations and then is able to use 90% of the donations to help kids attain basic needs like food, clothes and shelter. I am wondering if you would donate part of today's pay? Even a donation of $0.05 can help.
+Label: none
+
+Misc. Examples:
+
+sender: Can you give me another example? or Try answering this? or Do you remember X? or Do you need more help / explanation / assistance?
+Label: none
+
+sender: what do you mean? or I don't get it or Did you mean to say?
+Label: clarification
+
+sender: "Ok, try this one ____."
+Label: none
+
+sender: Now this one: ____
+Label: none
+
+sender: messages like "How is your English?" or "Is there anything specific...?" or "How are you finding...?"
+Label: none
+
+sender: So, any questions about your English studies today?
+Label: none
+
+sender: How are you finding your English language learning experience so far?
+Label: none
+
+sender: messages including phrases like "going back", "so,", or any rephrases of prior messages.
+Label: none
+
+sender: messages like "is there anything specific to focus on?"
+Label: none
+
+sender: messages including phrases like "anything else?" or "what else?"
+Label: none
+
+sender: greetings like "how are you?" or "is everything alright?"
+Label: none
+
+sender: "Yes, absolutely!" or "Yes, exactly!" or "Yes, that's correct!"
+Label: none
+
+sender: "ok", "I see", "oh, right", "I see", "uh huh", "that makes sense", "I get it"
+Label: acknowledgement
+
+sender: "What specifically" or "Would you like to talk more" or "can you tell me more"
+Label: none
+
+sender: sorry for the confusion!
+Label: repair
+
+sender: Can you please tell me a little more about what's going on?
+Label: none
+
+sender: Can you tell me more about how you're feeling right now?
+Label: none
+
+sender: So, did you (any message that includes "so," MUST be none)
+Label: none
+
+sender: So, how are things 
+Label: none
+
+sender: So, back to
+Label: none
+
+sender: So, [anything here!]
+Label: none
+
+You must follow these rules:
+
+Any greeting ("how are you?", "is everything good?") must be labeled as none.
+
+followups and clarification must be questions.
+
+Requests to do something ("can you try / do..." etc.) must be labeled none.
+
+Questions that clarify understanding or misunderstanding must be clarification.
+
+Requests to do something must be none.
+
+Messages that test knowledge ("do you understand...", "do you know what the answer to X is?") must be none. 
+
+followups occur if the asker does NOT know the answer and is seeking information.
+
+Any message that includes an apology ("I'm sorry", "As an AI language model") or correction must be repair.
+
+You can use the "ok" test to see if something must be clarification.
+If a message sounds contradictory when you put "Ok" in front of it, then it must be clarification.
+Followup questions that indicate understanding must be none (e.g. replying "Ok. Where do you work?" to "Work is hard.").
+
+Anything that refers BACK to a prior message must be none.
+
+acknowledgement messages are demonstrations of understanding from a prior message.
+
+acknowledgement messages do NOT indicate opinion. 
+
+acknowledgement messages indicate that someone simply gets a message, but doesn't agree with it.
+
+Rephrasing or repitition of prior messages MUST be none.
+
+ANYTHING containing "yes, correct!" or "absolutely!" or "yes! exactly!" must be none.
+
+ANYTHING containing text like "So," "is there anything specific" "let's get back to" "going back" "any other questions" "finally" MUST BE LABELED as none.
+
+ANYTHING containing text like "what specifically", "can you tell me more" MUST BE LABELED as none.
+
+Annotate all the messages in the conversation below in the format of the examples. Make sure you follow the rules:
